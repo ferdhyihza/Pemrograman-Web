@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+#login ul {
+  background-color: #131822;
+  padding-right: 24px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+#login ul li {
+  margin: 8px;
+  padding: 4px 8px;
+}
+
+#login ul li:last-child {
+  border: 1px solid #bebebe75;
+  border-radius: 4px;
+}
+
+#login ul li a {
+  text-decoration: none;
+  color: #bebebe;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+#login ul li a:hover {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container.banner {
+  background-size: cover;
+  background-image: url(https://drive.google.com/uc?export=view&id=13eehXR9Hu4mJYsil0c2HLDyFJWaeacff);
+}
+
+.container.banner {
+  padding: 100px 0px;
+
+  text-align: center;
+}
+
+.banner h1 {
+  background: linear-gradient(270deg, #f5b100 0%, #f9eb7a 100%, #f9ec7d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: 0.5px;
+}
+
+.banner p {
+  color: #eeeeee;
+  margin-top: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+}
+
+main {
+  height: 80px;
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main ul {
+  border-radius: 12px;
+  width: auto;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+main ul li {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin: 8px 0;
+  list-style: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  /* or 25px */
+
+  letter-spacing: 0.02em;
+
+  color: #131822;
+}
+
+main ul li:first-of-type {
+  margin-right: 8px;
+}
+
+main ul li:hover {
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(245, 177, 0, 0.15);
+}
+
+main ul li#current {
+  border: 2px solid #f5b100;
+  background-color: rgba(245, 177, 0, 0.2);
+  /* background: linear-gradient(135deg, #f9ec7d 0%, #f5b100 100%); */
+}
+
+main ul li a {
+  color: #131822;
+  text-decoration: none;
+}
+
+main ul li#current a {
+  color: orange;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.konten {
+  margin: 64px 0;
+  border-top: 4px solid #54c3e5;
+  width: 1030px;
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(34, 47, 62, 0.1);
+}
+
+#konten-profil {
+  border-top: 4px solid #54c3e5;
+}
+
+#konten-matkul {
+  border-top: 4px solid #b386fa;
+}
+
+#konten-judul {
+  margin: 52px 84px;
+  display: flex;
+  flex-direction: row;
+}
+
+#konten-judul img {
+  height: 38px;
+  margin-right: 20px;
+}
+
+#konten-judul h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.3px;
+
+  color: #121212;
+}
+
+#konten-isi {
+  display: flex;
+  padding: 0 84px;
+  padding-bottom: 52px;
+}
+
+#biodata {
+  width: 75%;
+}
+
+#biodata h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.35px;
+
+  color: #121212;
+}
+
+#biodata p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.35px;
+
+  color: #121212;
+  margin-bottom: 12px;
+}
+
+#foto {
+  height: 200px;
+  width: 25%;
+}
+
+#foto img {
+  width: 200px;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+footer {
+  padding: 32px 0;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.3px;
+
+  color: #ffffff;
+  background-color: #121212;
+}
+
+/* Style Page Matkul */
+
+#konten-isi table {
+  width: 100%;
+}
+
+#konten-isi table tr th {
+  background-color: rgba(179, 134, 250, 0.8);
+  padding: 20px 0;
+  font-size: large;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+}
+
+#konten-isi table tr th:first-of-type {
+  width: 50px;
+}
+
+#konten-isi table tr th:last-of-type {
+  width: 120px;
+}
+
+#konten-isi table tr td {
+  padding: 12px 0;
+}
+
+#konten-isi table tr:nth-child(odd) {
+  background-color: rgba(179, 134, 250, 0.25);
+}
+
+#konten-isi table tr td:first-of-type {
+  text-align: center;
+  width: 50px;
+}
+
+#konten-isi table tr td:nth-child(2) {
+  padding-left: 11px;
+}
+
+#konten-isi table tr td:last-of-type {
+  text-align: center;
+  width: 120px;
+}
+
+/* ================ Styling Form Login ================ */
+
+.container.login.banner h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: auto;
+  letter-spacing: 0.3px;
+}
+
+.container.login.banner p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  margin-bottom: 64px;
+}
+
+form {
+  background-color: white;
+  border-radius: 4px;
+}
+
+form ul {
+  margin-top: 64px;
+}
+
+form ul li {
+  list-style: none;
+}
+
+.form-login {
+  width: 576px;
+  margin: 0 auto;
+}
+
+.container.login.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-login input,
+button {
+  width: 400px;
+  height: 52px;
+}
+
+.form-login ul li {
+  display: flex;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login ul li:last-child {
+  margin-bottom: 0;
+}
+
+.form-login img {
+  border-radius: 2px 0 0 2px;
+  padding: 13px;
+  border: 1px solid black;
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.form-login input {
+  border-radius: 0 2px 2px 0;
+  border: 1px solid black;
+  border-left: none;
+  padding: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+
+  color: rgba(100, 100, 100, 1);
+}
+
+.form-login input::placeholder {
+  color: rgba(100, 100, 100, 0.4);
+}
+
+.form-login button {
+  border-radius: 4px;
+  margin: 16px 0;
+  background-color: #f5b100;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.container.login.banner form p {
+  margin-top: 4px;
+  margin-bottom: 28px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #6b6b6b;
+}
+
+.container.login.banner form p span a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  text-decoration-line: underline;
+  color: #f5b100;
+}
+
+#close button {
+  overflow: hidden;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #bebebe;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+#close button span {
+  top: -4px;
+  right: 3px;
+  position: absolute;
+  font-size: 48px;
+  line-height: 48px;
+  transform: rotate(45deg);
+}
