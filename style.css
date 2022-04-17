@@ -213,6 +213,7 @@ section {
   display: flex;
   padding: 0 84px;
   padding-bottom: 52px;
+  flex-direction: column;
 }
 
 #biodata {
@@ -316,6 +317,41 @@ footer {
 #konten-isi table tr td:last-of-type {
   text-align: center;
   width: 120px;
+}
+
+#konten-matkul #konten-isi h5 {
+  text-align: center;
+}
+
+#konten-matkul #konten-isi form {
+  display: flex;
+}
+
+#konten-matkul #konten-isi button,
+input {
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid #b286fa;
+  cursor: pointer;
+  color: #602ab8;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  height: 50px;
+  width: 300px;
+  margin: 24px auto;
+  background-color: #b286fa94;
+}
+
+#konten-matkul #konten-isi button:hover,
+input:hover {
+  background-color: #b386fa;
+}
+
+#konten-matkul #konten-isi button:active input:hover {
+  background-color: #602ab8;
 }
 
 /* ================ Styling Form Login ================ */

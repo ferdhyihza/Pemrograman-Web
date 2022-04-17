@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', 'root', 'lkm');
+include 'includes/koneksi.php';
 
 function registration($data)
 {
